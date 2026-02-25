@@ -76,6 +76,13 @@ npm run build
 - Change gender and skills and confirm the JSON output reflects your selections.
 - Click **Cancel** and verify that all fields reset (skills checkboxes unchecked, text/textarea cleared, state reset).
 
+SCREENSHOTS : 
+<img width="1891" height="948" alt="Screenshot 2026-02-25 151226" src="https://github.com/user-attachments/assets/cb338c5c-dc22-4385-8ce4-3c2cc3ed20a5" />
+<img width="1893" height="916" alt="Screenshot 2026-02-25 151246" src="https://github.com/user-attachments/assets/50ad2d26-7207-493b-9782-270723af7122" />
+<img width="1892" height="952" alt="Screenshot 2026-02-25 151302" src="https://github.com/user-attachments/assets/640f185f-7f45-409a-8733-2cd6f5d2893b" />
+<img width="1821" height="936" alt="Screenshot 2026-02-25 151311" src="https://github.com/user-attachments/assets/4c8242cd-a468-4a3f-9414-157d03c71c9b" />
+
+
 ---
 
 ### 2. FS_EXP6.2 – Separate React App (Nested)
@@ -113,6 +120,9 @@ To build for production:
 ```bash
 npm run build
 ```
+SCREENSHOTS:
+<img width="764" height="948" alt="Screenshot 2026-02-25 152200" src="https://github.com/user-attachments/assets/90006495-16e3-4a97-97ce-8f2343a3c198" />
+<img width="1737" height="929" alt="Screenshot 2026-02-25 152143" src="https://github.com/user-attachments/assets/9bca2571-e7f8-4470-9a06-5a8d55f1c1e6" />
 
 ---
 
