@@ -1,0 +1,189 @@
+/* App container */
+.App {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  background: linear-gradient(145deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.App h1 {
+  text-align: center;
+  color: #f1f5f9;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Form container */
+.consent-form {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(248, 250, 252, 0.98);
+  border-radius: 16px;
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+}
+
+/* Field wrapper */
+.consent-form .form-field {
+  margin-bottom: 1.5rem;
+}
+
+.consent-form .form-field:last-of-type {
+  margin-bottom: 1.75rem;
+}
+
+/* Labels */
+.consent-form label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 0.5rem;
+}
+
+.consent-form .form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 0.5rem;
+}
+
+/* Inputs */
+.consent-form input[type="text"],
+.consent-form input[type="date"],
+.consent-form textarea,
+.consent-form select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #0f172a;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.consent-form input[type="text"]::placeholder,
+.consent-form textarea::placeholder {
+  color: #94a3b8;
+}
+
+.consent-form input[type="text"]:focus,
+.consent-form input[type="date"]:focus,
+.consent-form textarea:focus,
+.consent-form select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Textarea */
+.consent-form textarea {
+  min-height: 88px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+/* Select */
+.consent-form select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+/* Radio group */
+.consent-form .form-field--radio {
+  margin-bottom: 1.5rem;
+}
+
+.consent-form .radio-group {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.consent-form .radio-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #475569;
+}
+
+.consent-form .radio-option input {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin: 0;
+  accent-color: #3b82f6;
+  cursor: pointer;
+}
+
+.consent-form .radio-option:hover {
+  color: #0f172a;
+}
+
+/* Buttons */
+.consent-form .form-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.consent-form .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  border: none;
+}
+
+.consent-form .btn:active {
+  transform: scale(0.98);
+}
+
+.consent-form .btn--primary {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
+}
+
+.consent-form .btn--primary:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.45);
+}
+
+.consent-form .btn--secondary {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+.consent-form .btn--secondary:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+/* Error message (if used later) */
+.consent-form .error {
+  font-size: 0.8125rem;
+  color: #dc2626;
+  margin-top: 0.375rem;
+  margin-bottom: 0;
+}
