@@ -92,26 +92,39 @@ This project is a React form validation exercise that demonstrates client-side v
 
 The form implements the following key features:
 -Email Validation
+
 -Must contain @
+
 -Must end with .com, .in, or a country code like .uk
+
 -Displays a clear error message if the input is empty or invalid
 
 **Password Validation**
 
 -Must start with a capital letter
+
 -Must include at least one number
+
 -Must contain at least one special character
+
 -Minimum 5 characters
+
 -Inline error messages appear if any rule is violated
 
 **Controlled Components**
 
 -All inputs are managed using React state
+
 -Validation occurs on change and on blur
+
 -Tracks touched fields to avoid showing errors before interaction
+
 -Form Submission
+
 -Prevents submission if validation fails
+
 -Shows a success alert when all inputs are valid
+
 -Resets all fields after successful submission
 
 **Form Fields**
