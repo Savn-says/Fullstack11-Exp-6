@@ -77,55 +77,66 @@ npm run build
 - Click **Cancel** and verify that all fields reset (skills checkboxes unchecked, text/textarea cleared, state reset).
 
 SCREENSHOTS : 
-<img width="1891" height="948" alt="Screenshot 2026-02-25 151226" src="https://github.com/user-attachments/assets/cb338c5c-dc22-4385-8ce4-3c2cc3ed20a5" />
-<img width="1893" height="916" alt="Screenshot 2026-02-25 151246" src="https://github.com/user-attachments/assets/50ad2d26-7207-493b-9782-270723af7122" />
-<img width="1892" height="952" alt="Screenshot 2026-02-25 151302" src="https://github.com/user-attachments/assets/640f185f-7f45-409a-8733-2cd6f5d2893b" />
-<img width="1821" height="936" alt="Screenshot 2026-02-25 151311" src="https://github.com/user-attachments/assets/4c8242cd-a468-4a3f-9414-157d03c71c9b" />
+<img width="764" height="948" alt="Screenshot 2026-02-25 152200" src="https://github.com/user-attachments/assets/90006495-16e3-4a97-97ce-8f2343a3c198" />
+<img width="1737" height="929" alt="Screenshot 2026-02-25 152143" src="https://github.com/user-attachments/assets/9bca2571-e7f8-4470-9a06-5a8d55f1c1e6" />
+
 
 
 ---
 
 ### 2. FS_EXP6.2 – Separate React App (Nested)
 
-**Goal**: Demonstrate a second independent React application living **inside a nested folder** in the same repository.
+This project is a React form validation exercise that demonstrates client-side validation using controlled components and React hooks. The form collects email and password inputs, validates them according to specific rules, and provides real-time inline error messages. Invalid input prevents form submission, and on successful validation, the form resets, allowing repeated testing. This makes it a practical example of form handling, state management, and validation logic in React.
 
-**Structure**
+**Features**
 
-- `fs_exp6.2/` – root folder for Experiment 6.2 (contains this app’s README and the inner app folder).
-- `fs_exp6.2/fs_exp6.2/` – the actual React application:
-  - Has its own `package.json`
-  - Has its own `node_modules`, `public`, `src`, and a default CRA `README.md`
+The form implements the following key features:
+-Email Validation
+-Must contain @
+-Must end with .com, .in, or a country code like .uk
+-Displays a clear error message if the input is empty or invalid
 
-**Tech stack**
+**Password Validation**
 
-- React (Create React App)
-- JavaScript
+-Must start with a capital letter
+-Must include at least one number
+-Must contain at least one special character
+-Minimum 5 characters
+-Inline error messages appear if any rule is violated
 
-This inner app follows the **standard CRA structure** and can be customized for any additional experiment you want (routing, API calls, components practice, etc.).
+**Controlled Components**
 
-#### How to run `fs_exp6.2`
+-All inputs are managed using React state
+-Validation occurs on change and on blur
+-Tracks touched fields to avoid showing errors before interaction
+-Form Submission
+-Prevents submission if validation fails
+-Shows a success alert when all inputs are valid
+-Resets all fields after successful submission
 
-From the repository root:
+**Form Fields**
 
-```bash
-cd fs_exp6.2/fs_exp6.2
-npm install
-npm start
-```
+The form captures the following data:
 
-Then open `http://localhost:3000` in your browser.
+**Email ID** – text input, required
 
-To build for production:
+**Password**– password input, required
 
-```bash
-npm run build
-```
+Each field is validated immediately, and error messages appear dynamically, helping the user correct mistakes before submitting the form.
+
+**Tech Stack**
+React (Create React App)
+JavaScript (Functional Components + Hooks)
+
+The state is managed with useState, and reusable validation functions isValidEmail and validatePassword keep the code clean and maintainable.
 SCREENSHOTS:
-<img width="764" height="948" alt="Screenshot 2026-02-25 152200" src="https://github.com/user-attachments/assets/90006495-16e3-4a97-97ce-8f2343a3c198" />
-<img width="1737" height="929" alt="Screenshot 2026-02-25 152143" src="https://github.com/user-attachments/assets/9bca2571-e7f8-4470-9a06-5a8d55f1c1e6" />
+<img width="1891" height="948" alt="Screenshot 2026-02-25 151226" src="https://github.com/user-attachments/assets/cb338c5c-dc22-4385-8ce4-3c2cc3ed20a5" />
+<img width="1893" height="916" alt="Screenshot 2026-02-25 151246" src="https://github.com/user-attachments/assets/50ad2d26-7207-493b-9782-270723af7122" />
+<img width="1892" height="952" alt="Screenshot 2026-02-25 151302" src="https://github.com/user-attachments/assets/640f185f-7f45-409a-8733-2cd6f5d2893b" />
+<img width="1821" height="936" alt="Screenshot 2026-02-25 151311" src="https://github.com/user-attachments/assets/4c8242cd-a468-4a3f-9414-157d03c71c9b" />
 
----
 
+ 
 ### Summary of Both Experiments
 
 - **fs_exp6.1** focuses on:
@@ -135,6 +146,4 @@ SCREENSHOTS:
   - Simple validation and reset logic.
 
 - **fs_exp6.2** focuses on:
-  - Understanding and working with a second, independent CRA project.
-  - Practicing running and managing multiple React apps inside one repo.
-
+   This project is a React form validation exercise that demonstrates client-side validation using controlled components and React hooks. The form collects email and password inputs, validates them according to specific rules, and provides real-time inline error messages. Invalid input prevents form submission, and on successful validation, the form resets, allowing repeated testing. This makes it a practical example of form handling, state management, and validation logic in React.
